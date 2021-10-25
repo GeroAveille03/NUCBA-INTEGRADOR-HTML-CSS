@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   background-color: #aa0000;
   color: #ffff;
   background-image: url(./assets/imghinchada.jpg);
@@ -139,14 +139,62 @@ main .loginContainer {
   height: 500px;
   width: 350px;
   background-color: #aa0000;
+  opacity: 90%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border: 2px solid white;
+  border: 10px double white;
   margin: auto;
+  border-radius: 8px;
+}
+
+main form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0% 20%;
+}
+
+main form h2 {
+  font-size: 2.4em;
+  margin-top: -10%;
+}
+
+main form label {
+  margin: 3% 0%;
+  font-size: 1.4em;
+}
+
+main form button {
+  margin-top: 3%;
+  background: none;
+  padding: 2% 6%;
+  color: #ffff;
+  cursor: pointer;
+  border-radius: 8px;
+  border: #ffff 1px solid;
+  font-weight: 700;
+}
+
+main form button:hover {
+  background-color: #ffff;
+  color: #da251d;
+}
+
+main form h3 {
+  margin-top: 5%;
+  font-size: 1.2em;
 }
 
 footer {
@@ -240,7 +288,7 @@ footer .footerContainer form label {
   font-weight: 400;
 }
 
-footer .footerContainer form input[type=text] {
+footer .footerContainer form input[type="text"] {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -251,12 +299,12 @@ footer .footerContainer form input[type=text] {
 }
 
 @media (max-width: 620px) {
-  footer .footerContainer form input[type=text] {
+  footer .footerContainer form input[type="text"] {
     width: 200px;
   }
 }
 
-footer .footerContainer form input[type=email] {
+footer .footerContainer form input[type="email"] {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -267,7 +315,7 @@ footer .footerContainer form input[type=email] {
 }
 
 @media (max-width: 620px) {
-  footer .footerContainer form input[type=email] {
+  footer .footerContainer form input[type="email"] {
     width: 200px;
   }
 }
