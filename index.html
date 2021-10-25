@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Club Atlético Unión</title>
+</head>
+
+<body>
+    <div class="globalContainer">
+        <!-- HEADER -->
+        <header>
+            <a href="index.html"><img class="logo" src="./assets/logo_cau_header.png" alt=""></a>
+
+            <nav class="normalNavbar">
+                <ul>
+                    <a href="#">
+                        <li>Inicio</li>
+                    </a>
+                    <a href="#noticias">
+                        <li>Noticias</li>
+                    </a>
+                    <a href="#historia">
+                        <li>Historia</li>
+                    </a>
+                    <a href="#contact">
+                        <li>Contacto</li>
+                    </a>
+                    <a href="#login">
+                        <li>Login</li>
+                    </a>
+                </ul>
+            </nav>
+
+            <div class="dropdown">
+                <a class="btn btn-outline-light dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                  Inicio
+                </a>
+              
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Inicio</a></li>
+                  <li><a class="dropdown-item" href="#noticias">Noticias</a></li>
+                  <li><a class="dropdown-item" href="#historia">Historia</a></li>
+                  <li><a class="dropdown-item" href="#contact">Contacto</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#login">Login</a></li>
+                </ul>
+              </div>
+
+            <div class="social">
+                <a href="https://twitter.com/clubaunion" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.facebook.com/clubaunion" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/clubaunion/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/c/ClubaunionOficial" target="_blank"><i class="fab fa-youtube"></i></a>
+            </div>
+        </header>
+
+        <!-- MAIN -->
+        <main>
+            <div class="principal">
+                <img class="background" src="./assets/unionsede.jpg" alt="">
+                <div class="princ-text">¡Bienvenidos a la página oficial del Dueño de la Ciudad!</div>
+
+                <h2 class="animate__animated animate__pulse animate__infinite infinite">Últimas Noticias</h2>
+                <section class="news" id="noticias">
+                    <article>
+                        <img src="./assets/imghinchada.jpg" alt="">
+                        <h4>Comunicado de prensa</h4>
+                        <p>Venta de entradas para la fecha 17 ante Racing (cupos limitados)...</p>
+                        <a href="#"><button>Leer más</button></a>
+                    </article>
+                    
+                    <article>
+                        <img src="./assets/unionvsracing.jpg" alt="">
+                        <h4>Unión vs Racing</h4>
+                        <p>Unión y Racing se enfretarán el martes a las 16:45 en el Estadio 15 de Abril...</p>
+                        <a href="#"><button>Leer más</button></a>
+                    </article>
+
+                    <article>
+                        <img src="./assets/unionvssarmiento.jpeg" alt="">
+                        <h4>Victoria del Tatengue</h4>
+                        <p>Unión venció por 4 a 3 a Sarmiento con goles de Gonzalez por duplicado...
+                        </p>
+                        <a href="#"><button>Leer más</button></a>
+                    </article>
+
+                    <article>
+                        <img src="./assets/munuapresentacion.jpg" alt="">
+                        <h4>Presentación de Munúa</h4>
+                        <p>Se realizó la presentación formal del nuevo director técnico Gustavo Munúa...</p>
+                        <a href="#"><button>Leer más</button></a>
+                    </article>
+
+                    <article>
+                        <img src="./assets/bandera.jpg" alt="">
+                        <h4>Comunicado de agradecimiento</h4>
+                        <p>El Club Unión agradece a Socios y Socias por el comportamiento...
+                        </p>
+                        <a href="#"><button>Leer más</button></a>
+                    </article>
+
+                    <article>
+                        <img src="./assets/femfutbol.jpeg" alt="">
+                        <h4>¡Campeonas del fútbol femenino!</h4>
+                        <p>¡Unión nuevamente hizo historia! El Tate se quedó con el Torneo Apertura...</p>
+                        <a href="#"><button>Leer más</button></a>
+                    </article>
+                    
+                </section>
+
+                <h2 class="animate__animated animate__pulse animate__infinite infinite">Historia de la Institución</h2>
+                <section class="history" id="historia">
+                    <iframe class="unionHistory" src="https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=17YLZZYv-nQa0sotcDjiRwr5SmawGM3icmyEJtt4mSxI&font=Default&lang=en&initial_zoom=2&height=600" frameborder="0"></iframe>
+                    <iframe class="unionCamisetas" src="https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1hsTfd1UavWGSC2N89NTFBmHlH_RwYi_N7Qy-mnMIG3A&font=Default&lang=es&initial_zoom=2&height=650" frameborder="0"></iframe>
+                </section>
+            </div>
+        </main>
+
+        <!-- FOOTER -->
+        <footer>
+            <img class="footerLogo" src="./assets/Union_de_Santa_Fe.png" alt="">
+            <div class="footerContainer" id="contact">
+                <form>
+                    <h4>¡Contactanos!</h4>
+                    <label>Nombre Completo:
+                        <input type="text" name="fullname" id="">
+                    </label>
+
+                    <label>Email:
+                        <input type="email" name="mail" id="">
+                    </label>
+
+                    <label>¿Es usted socio de Unión?
+                        <input type="checkbox" name="socio" id="">
+                    </label>
+
+                    <label class="message">Mensaje:
+                        <textarea name="message" id="" cols="30" rows="4"></textarea>
+                    </label>
+
+                    <button>Enviar</button>
+                </form>
+                
+                <h3>Hecho por &copyGero para NUCBA</h3>
+
+                <div class="suscribeSocial">
+                <h4 class="redes">Redes Sociales</h4>
+                <a href="https://twitter.com/clubaunion" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.facebook.com/clubaunion" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/clubaunion/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/c/ClubaunionOficial" target="_blank"><i class="fab fa-youtube"></i></a>
+                </div>
+
+            </div>
+        </footer>
+    </div>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+</body>
+
+</html>
