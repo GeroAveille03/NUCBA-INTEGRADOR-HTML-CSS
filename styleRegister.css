@@ -1,0 +1,401 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Oswald", sans-serif;
+  background-color: #aa0000;
+  color: #ffff;
+  background-image: url(./assets/imghinchada.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+header {
+  height: 100px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: rgba(255, 255, 255, 0.863) 1px solid;
+  background-color: #aa0000;
+  -webkit-box-shadow: 4px 4px 40px #919191;
+          box-shadow: 4px 4px 40px #919191;
+}
+
+header a img.logo {
+  height: 80px;
+  margin-left: 3%;
+  margin-top: 3%;
+  border-right: rgba(255, 255, 255, 0.466) 2px solid;
+}
+
+header nav.normalNavbar {
+  height: 100px;
+  width: 1400px;
+}
+
+@media (max-width: 1024px) {
+  header nav.normalNavbar {
+    display: none;
+  }
+}
+
+header nav.normalNavbar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 1.9%;
+  margin-right: 5%;
+}
+
+header nav.normalNavbar ul li {
+  list-style-type: none;
+  font-weight: 900;
+  font-size: 2em;
+  cursor: pointer;
+}
+
+header nav.normalNavbar ul li:hover {
+  color: #919191;
+  -webkit-transition: 1s all;
+  transition: 1s all;
+}
+
+.dropdown {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .dropdown {
+    display: block;
+    margin-top: 3%;
+  }
+}
+
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-size: 1.5em;
+  margin-top: 0.5%;
+  margin-right: 5%;
+}
+
+@media (max-width: 768px) {
+  .social {
+    display: none;
+  }
+}
+
+.social a {
+  color: #ffff;
+  padding-right: 30%;
+}
+
+.social a:hover {
+  color: #919191;
+}
+
+.social a i.fa-instagram {
+  margin-left: 10%;
+}
+
+main {
+  height: 75vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .loginContainer {
+  height: 500px;
+  width: 350px;
+  background-color: #aa0000;
+  opacity: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 10px double white;
+  margin: auto;
+  border-radius: 8px;
+}
+
+main form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0% 20%;
+}
+
+main form h2 {
+  font-size: 2.4em;
+  margin-top: -3%;
+}
+
+main form label {
+  margin: 3% 0%;
+  font-size: 1.4em;
+}
+
+main form button {
+  margin-top: 3%;
+  background: none;
+  padding: 2% 6%;
+  color: #ffff;
+  cursor: pointer;
+  border-radius: 8px;
+  border: #ffff 1px solid;
+  font-weight: 700;
+}
+
+main form button:hover {
+  background-color: #ffff;
+  color: #da251d;
+}
+
+main form h3 {
+  margin-top: 5%;
+  font-size: 1.2em;
+}
+
+footer {
+  border-top: 10px whitesmoke double;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 285px;
+  background-color: #aa0000;
+}
+
+@media (max-width: 800px) {
+  footer {
+    margin-top: 60%;
+  }
+}
+
+@media (max-width: 520px) {
+  footer {
+    margin-top: 80%;
+  }
+}
+
+@media (max-width: 420px) {
+  footer {
+    margin-top: 90%;
+  }
+}
+
+footer .footerLogo {
+  height: 250px;
+  margin-top: 8px;
+  margin-left: 1%;
+  width: 225px;
+}
+
+@media (max-width: 768px) {
+  footer .footerLogo {
+    height: 125px;
+  }
+}
+
+footer .footerContainer {
+  margin-top: 10px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .footerContainer h3 {
+  margin-top: 7%;
+  margin-left: 3%;
+  text-align: center;
+}
+
+@media (max-width: 1024px) {
+  footer .footerContainer h3 {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  footer .footerContainer h3 {
+    display: none;
+  }
+}
+
+footer .footerContainer form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 2%;
+  width: 15%;
+}
+
+footer .footerContainer form h4 {
+  font-size: 2em;
+  font-weight: 700;
+}
+
+footer .footerContainer form label {
+  font-size: 1.3em;
+  font-weight: 400;
+}
+
+footer .footerContainer form input[type="text"] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 95%;
+  height: 25px;
+  border: none;
+  border-radius: 3px;
+}
+
+@media (max-width: 620px) {
+  footer .footerContainer form input[type="text"] {
+    width: 200px;
+  }
+}
+
+footer .footerContainer form input[type="email"] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 95%;
+  height: 25px;
+  border: none;
+  border-radius: 3px;
+}
+
+@media (max-width: 620px) {
+  footer .footerContainer form input[type="email"] {
+    width: 200px;
+  }
+}
+
+footer .footerContainer form textarea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 3px;
+  border: none;
+}
+
+footer .footerContainer form label.message {
+  margin-left: 100%;
+  margin-top: -57%;
+}
+
+@media (max-width: 1024px) {
+  footer .footerContainer form label.message {
+    margin-top: -175%;
+  }
+}
+
+@media (max-width: 768px) {
+  footer .footerContainer form label.message {
+    margin-top: -230%;
+  }
+}
+
+@media (max-width: 520px) {
+  footer .footerContainer form label.message {
+    margin-top: 10%;
+    margin-left: -10%;
+  }
+}
+
+footer .footerContainer form button {
+  margin-top: 2%;
+  background: none;
+  width: 490px;
+  padding: 2% 6%;
+  color: #ffff;
+  cursor: pointer;
+  border-radius: 8px;
+  border: #ffff 1px solid;
+  font-weight: 700;
+}
+
+footer .footerContainer form button:hover {
+  background-color: #ffff;
+  color: #da251d;
+}
+
+@media (max-width: 650px) {
+  footer .footerContainer form button {
+    width: 200px;
+  }
+}
+
+footer .footerContainer .suscribeSocial {
+  font-size: 3em;
+  margin-top: 2%;
+  margin-right: 17%;
+}
+
+@media (max-width: 1024px) {
+  footer .footerContainer .suscribeSocial {
+    margin-left: 12%;
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  footer .footerContainer .suscribeSocial {
+    display: none;
+  }
+}
+
+footer .footerContainer .suscribeSocial h4.redes {
+  font-size: 0.9em;
+  margin-left: -13%;
+}
+/*# sourceMappingURL=styleRegister.css.map */
